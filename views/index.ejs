@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FCat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<style>
+  button
+  {
+    background:linear-gradient(45deg,  #ff5d5d,
+    #e3a83c 43%,
+    #c2bc00);
+    font-size: 20px;
+    border: 0;
+    border-radius: 20px;
+    font-family: "Titan One";
+  color: rgb(202, 255, 255);
+  padding: 20px;}
+  button:hover
+  {opacity: 50%;
+    box-shadow: 0px 0px 10px 1px rgb(227, 255, 45) ;
+    font-size: 20px;
+    transition: all ease-in-out 0.2s;
+    border: 0;
+    border-radius: 20px;
+    font-family: "Titan One";
+  color: rgb(202, 255, 255);
+  padding: 20px;}
+</style>
+<body>
+  <h1>Get a random cat fact!🐈</h1>
+  <div class="card">
+    <p>
+      <%= secret %>
+    </p>
+  </div>
+  <p class="user">
+    <%= user %>
+  </p>
+  <button onclick="refreshit()"> Refresh page</button>
+<script>
+  function refreshit()
+  {
+    location.reload();
+  }
+  
+</script>
+</body>
+
+</html>
