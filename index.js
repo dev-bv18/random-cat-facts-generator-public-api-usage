@@ -32,5 +32,5 @@ catch(error){
 
 // 6. Listen on your predefined port and start the server.
 app.listen(port,()=>{
-console.log(`Server is running at port ${port}`);
+console.log(`The server is running at port ${port}`);
 });
